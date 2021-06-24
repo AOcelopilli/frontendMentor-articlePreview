@@ -116,13 +116,13 @@ body {
   border-radius: 50%;
   box-shadow: 0 0 3px white;
   color: var(--main-blue-dark);
-  height: calc(30px + 3vw);
+  height: calc(20px + 3vw);
   outline: none;
   position: absolute;
   bottom: 0;
-  font-size: calc(1.25rem + 1.5vw);
+  font-size: calc(0.8rem + 1.5vw);
   right: 0;
-  width: calc(30px + 3vw);
+  width: calc(20px + 3vw);
   z-index: 10;
   transition: all 0.2s ease-in-out;
 }
@@ -142,31 +142,38 @@ body {
 }
 
 .share {
-  height: 15%;
+  height: 110%;
   background: var(--main-blue-darkness);
   color: white;
-  width: auto;
+  width: 110%;
   position: absolute;
   bottom: 0;
-  transform: translateY(100%);
+  left: -5%;
+  transform: translateY(120%);
   transition: all 0.2s ease;
 }
 
 .share.active {
-  transform: translateY(0);
+  transform: translateY(20%);
+}
+
+.media-links {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .media-links span {
-  position: relative;
-  top: -4px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--main-blue);
   letter-spacing: 0.5rem;
   margin-left: 1rem;
 }
 
 .media-links a {
+  font-size: clamp(1rem, 8vw, 3rem);
   color: inherit;
+  margin: 0 0.5rem;
 }
 
 @media (min-width: 700px) {
@@ -207,6 +214,10 @@ body {
     word-spacing: 0.5rem;
   }
 
+  .profile {
+    position: relative;
+  }
+
   .profile a {
     font-size: calc(0.9rem + 0.5vw);
   }
@@ -227,11 +238,12 @@ body {
     display: flex;
     position: absolute;
     border-radius: 0.5rem;
+    bottom: 120%;
+    left: 75%;
     z-index: 10;
-    top: -30%;
-    right: calc(5% - 0.1vw);
-    transform: translate(50%, -100%);
+    transform: translate(0, 0);
     transition: all 0.3s ease;
+    width: calc(200px + 2vw);
     opacity: 0;
     visibility: 0;
   }
@@ -250,7 +262,7 @@ body {
   .share.active {
     opacity: 1;
     visibility: 1;
-    transform: translate(50%, -100%);
+    transform: translate(0, 0);
   }
 
   .media-links {
