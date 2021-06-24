@@ -5,7 +5,7 @@ const d = document,
 
 d.addEventListener("click", (e) => {
   if (e.target == $btnShare) {
-    $shareProfile.classList.toggle("active");
+    $btnShare.classList.toggle("active");
     $shareMedia.classList.toggle("active");
   }
 });
