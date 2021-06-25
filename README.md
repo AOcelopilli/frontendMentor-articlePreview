@@ -52,3 +52,9 @@ How to write better my html and the relationship amoung the elements that intera
 ### Continued development
 
 I need to think better before start to wirte the code, and practice more with my CSS because it is expensive talking about time.
+
+## Author
+
++ Website - [www.angelpineda.com.mx](https://www.angelpineda.com.mx)
++ Frontend Mentor - [@angelp495](https://www.frontendmentor.io/profile/angelp495)
++ Twitter - [@AOcelopilli](https://twitter.com/AOcelopilli)
